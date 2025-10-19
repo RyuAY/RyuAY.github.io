@@ -1,0 +1,130 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 류아영
+title: 백엔드, 프론트엔드 개발자
+email: ayryu2005@gmail.com
+# email_title: Email (Email title override)
+phone: 010-4065-3136
+# phone_title: Phone (Phone title override)
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+github_username:  RyuAY
+
+about_profile_image: "./assets/profile.jpg"
+about_content: | 
+  "2021년부터 한샘 외주 계약을 통해 SRM, ERP, AS의 담당자로 시스템 개발 및 유지보수를 담당해왔습니다. Java, Spring 등을 주력으로 사용하며, Tomcat과 JBoss 기반 서버 환경에서 nginx를 활용한 배포 및 Linux 운영 경험과 MySQL, MSSQL 데이터베이스 설계 및 운영 경험도 갖추고 있습니다.
+
+  개발 과정에서는 다양한 툴과 IDE를 활용하며, GitHub, Bitbucket, Jira 등을 통한 협업 경험을 통해 안정적이고 효율적인 시스템 운영과 유지보수, 확장 가능한 아키텍처 설계에 기여해왔습니다.
+  또한 백엔드 뿐만 아니라 UI/UX 개선 등 프론트엔드 개발과 웹 퍼블리싱 경험을 바탕으로 한샘서비스센터 웹사이트 전면 개편시 디자인 담당자들과 더욱 원활하게 소통하고 결과물을 이끌어 낸 경험이 있습니다.
+
+  앞으로도 전문성을 더욱 확장하며, 팀과 조직과 함께 성장하는 개발자가 되는 것을 목표로 하고 있습니다. 적극적인 소통과 협력을 통해 문제를 해결하고 가치를 만들어내는 개발자가 되기 위해 지속적으로 학습과 경험을 이어가고 있습니다.
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: 에스마리나(주)
+        caption: 2023.01 ~ 2023.05
+        link: http://smarina.co.kr/
+        description: | 
+          - HTML/CSS와 NodeJs를 이용한 에스마리나(주) 회사 및 제품소개 신규 홈페이지 구축
+      - layout: left
+        title: (주)한영DS
+        sub_title: 대리
+        caption: 2021.01 ~ 현재
+        link: https://www.hyds.kr/
+        quote: >
+          한샘 프로그램 외주 담당 (SRM, ERP, AS)
+        description: | 
+          - 한샘 SRM 시스템 운영 및 유지보수
+          - 한샘 SERP, SVND 시스템 운영 및 유지보수
+          - 한샘 AS 시스템 운영 및 유지보수 
+      - layout: left
+        quote: >
+          (주)한영DS 홈페이지 신규 구축
+        description: | 
+          - HTML/CSS와 Nodejs를 이용한 (주)한영DS 회사 소개 신규 홈페이지 구축
+      
+  - title: Competence
+    layout: list
+    content:
+      - layout: left
+        title: 한샘 SRM
+        caption: 2021.01 ~ 2023.01
+        description: | 
+          - SRM 프로젝트 ~~       
+  - title: Skill
+    layout: list
+    quote: >
+          현재 업무에 사용중 혹은 사용했던 기술들입니다.
+    content:
+      - layout: left
+        title: Languages
+        description: | 
+          - Java
+          - HTML,CSS
+          - TypeScript,JavaScript
+      - layout: left
+        title: Frameworks & Libraries
+        description: | 
+          - Spring, Spring Boot
+          - React
+      - layout: left
+        title: Infrastructure & Databases
+        description: | 
+          - nginx
+          - Tomcat, Jboss
+          - Linux
+          - MySQL, MSSQL
+      - layout: left
+        title: Tools & IDEs
+        description: | 
+          - Git
+          - Jenkins
+          - Eclipse, IntelliJ, VS Code
+          - GitHub, Bitbucket
+          - Jira
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
